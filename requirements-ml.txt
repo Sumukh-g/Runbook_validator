@@ -1,0 +1,2 @@
+# Optional, non-authoritative semantic assistance
+sentence-transformers>=3

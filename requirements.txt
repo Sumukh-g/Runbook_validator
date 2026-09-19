@@ -1,0 +1,10 @@
+pydantic>=2,<3
+PyYAML>=6
+python-docx>=1
+networkx>=3
+sqlglot>=25
+bashlex>=0.18
+z3-solver>=4.12
+streamlit>=1.32
+plotly>=5
+reportlab>=4

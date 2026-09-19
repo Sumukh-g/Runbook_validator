@@ -1,0 +1,30 @@
+{
+  "name": "Deployment",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "DEP-001",
+      "name": "Deployment lacks rollback",
+      "category": "recoverability",
+      "description": "Deployment lacks rollback.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "deployment_without_rollback",
+      "score_penalty": 10,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "DEP-002",
+      "name": "Deployment lacks health verification",
+      "category": "verification",
+      "description": "Deployment lacks health verification.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "deployment_without_verification",
+      "score_penalty": 9,
+      "remediation": "Add the missing domain-specific control and evidence."
+    }
+  ]
+}

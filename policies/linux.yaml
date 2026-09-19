@@ -1,0 +1,30 @@
+{
+  "name": "Linux",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "LINUX-001",
+      "name": "Service change lacks verification",
+      "category": "verification",
+      "description": "Service change lacks verification.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "service_without_verification",
+      "score_penalty": 8,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "LINUX-002",
+      "name": "Privileged operation requires control",
+      "category": "command_safety",
+      "description": "Privileged operation requires control.",
+      "rationale": "Domain policy requirement.",
+      "severity": "medium",
+      "enabled": true,
+      "evaluator": "privileged",
+      "score_penalty": 5,
+      "remediation": "Add the missing domain-specific control and evidence."
+    }
+  ]
+}

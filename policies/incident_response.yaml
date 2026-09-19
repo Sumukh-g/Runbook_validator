@@ -1,0 +1,30 @@
+{
+  "name": "Incident Response",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "IR-001",
+      "name": "Incident procedure lacks escalation",
+      "category": "escalation",
+      "description": "Incident procedure lacks escalation.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "missing_escalation",
+      "score_penalty": 8,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "IR-002",
+      "name": "Incident procedure lacks communications owner",
+      "category": "ownership",
+      "description": "Incident procedure lacks communications owner.",
+      "rationale": "Domain policy requirement.",
+      "severity": "medium",
+      "enabled": true,
+      "evaluator": "missing_owner",
+      "score_penalty": 6,
+      "remediation": "Add the missing domain-specific control and evidence."
+    }
+  ]
+}

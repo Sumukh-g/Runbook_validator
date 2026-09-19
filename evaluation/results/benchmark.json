@@ -1,0 +1,479 @@
+{
+  "evaluation": "controlled cross-domain benchmark",
+  "annotation_source": "controlled_project_annotation; no independent expert review",
+  "documents": 25,
+  "overall": {
+    "true_positive": 60,
+    "false_positive": 80,
+    "false_negative": 0,
+    "precision": 0.429,
+    "recall": 1.0,
+    "f1": 0.6
+  },
+  "per_category": {
+    "clarity": {
+      "true_positive": 5,
+      "false_positive": 10,
+      "false_negative": 0,
+      "precision": 0.333,
+      "recall": 1.0,
+      "f1": 0.5
+    },
+    "command_safety": {
+      "true_positive": 20,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "completeness": {
+      "true_positive": 10,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "escalation": {
+      "true_positive": 10,
+      "false_positive": 5,
+      "false_negative": 0,
+      "precision": 0.667,
+      "recall": 1.0,
+      "f1": 0.8
+    },
+    "ownership": {
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "recoverability": {
+      "true_positive": 5,
+      "false_positive": 15,
+      "false_negative": 0,
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4
+    },
+    "safety": {
+      "true_positive": 0,
+      "false_positive": 30,
+      "false_negative": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "sequencing": {
+      "true_positive": 5,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "verification": {
+      "true_positive": 0,
+      "false_positive": 20,
+      "false_negative": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "documents_detail": [
+    {
+      "document": "examples/benchmark/database__weak.md",
+      "expected": [
+        "CLR-001",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001"
+      ],
+      "actual": [
+        "CLR-001",
+        "CLR-003",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001",
+        "VER-002",
+        "VER-003"
+      ],
+      "latency_ms": 5.367
+    },
+    {
+      "document": "examples/benchmark/database__intermediate.md",
+      "expected": [
+        "ESC-001",
+        "REC-001"
+      ],
+      "actual": [
+        "ESC-001",
+        "REC-001",
+        "REC-003"
+      ],
+      "latency_ms": 2.179
+    },
+    {
+      "document": "examples/benchmark/database__improved.md",
+      "expected": [],
+      "actual": [],
+      "latency_ms": 2.352
+    },
+    {
+      "document": "examples/benchmark/database__sequencing_defect.md",
+      "expected": [
+        "SEQ-001"
+      ],
+      "actual": [
+        "SAFE-001",
+        "SAFE-002",
+        "SEQ-001"
+      ],
+      "latency_ms": 2.294
+    },
+    {
+      "document": "examples/benchmark/database__edge_case.md",
+      "expected": [
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005"
+      ],
+      "actual": [
+        "CLR-002",
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005",
+        "ESC-001",
+        "REC-001",
+        "REC-003",
+        "SAFE-001",
+        "SAFE-002",
+        "SAFE-004",
+        "SAFE-005",
+        "VER-001",
+        "VER-004"
+      ],
+      "latency_ms": 3.953
+    },
+    {
+      "document": "examples/benchmark/linux_service__weak.md",
+      "expected": [
+        "CLR-001",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001"
+      ],
+      "actual": [
+        "CLR-001",
+        "CLR-003",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001",
+        "VER-002",
+        "VER-003"
+      ],
+      "latency_ms": 1.688
+    },
+    {
+      "document": "examples/benchmark/linux_service__intermediate.md",
+      "expected": [
+        "ESC-001",
+        "REC-001"
+      ],
+      "actual": [
+        "ESC-001",
+        "REC-001",
+        "REC-003"
+      ],
+      "latency_ms": 1.592
+    },
+    {
+      "document": "examples/benchmark/linux_service__improved.md",
+      "expected": [],
+      "actual": [],
+      "latency_ms": 2.033
+    },
+    {
+      "document": "examples/benchmark/linux_service__sequencing_defect.md",
+      "expected": [
+        "SEQ-001"
+      ],
+      "actual": [
+        "SAFE-001",
+        "SAFE-002",
+        "SEQ-001"
+      ],
+      "latency_ms": 2.569
+    },
+    {
+      "document": "examples/benchmark/linux_service__edge_case.md",
+      "expected": [
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005"
+      ],
+      "actual": [
+        "CLR-002",
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005",
+        "ESC-001",
+        "REC-001",
+        "REC-003",
+        "SAFE-001",
+        "SAFE-002",
+        "SAFE-004",
+        "SAFE-005",
+        "VER-001",
+        "VER-004"
+      ],
+      "latency_ms": 3.205
+    },
+    {
+      "document": "examples/benchmark/application_deployment__weak.md",
+      "expected": [
+        "CLR-001",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001"
+      ],
+      "actual": [
+        "CLR-001",
+        "CLR-003",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001",
+        "VER-002",
+        "VER-003"
+      ],
+      "latency_ms": 1.748
+    },
+    {
+      "document": "examples/benchmark/application_deployment__intermediate.md",
+      "expected": [
+        "ESC-001",
+        "REC-001"
+      ],
+      "actual": [
+        "ESC-001",
+        "REC-001",
+        "REC-003"
+      ],
+      "latency_ms": 1.483
+    },
+    {
+      "document": "examples/benchmark/application_deployment__improved.md",
+      "expected": [],
+      "actual": [],
+      "latency_ms": 1.898
+    },
+    {
+      "document": "examples/benchmark/application_deployment__sequencing_defect.md",
+      "expected": [
+        "SEQ-001"
+      ],
+      "actual": [
+        "SAFE-001",
+        "SAFE-002",
+        "SEQ-001"
+      ],
+      "latency_ms": 1.897
+    },
+    {
+      "document": "examples/benchmark/application_deployment__edge_case.md",
+      "expected": [
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005"
+      ],
+      "actual": [
+        "CLR-002",
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005",
+        "ESC-001",
+        "REC-001",
+        "REC-003",
+        "SAFE-001",
+        "SAFE-002",
+        "SAFE-004",
+        "SAFE-005",
+        "VER-001",
+        "VER-004"
+      ],
+      "latency_ms": 2.056
+    },
+    {
+      "document": "examples/benchmark/kubernetes__weak.md",
+      "expected": [
+        "CLR-001",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001"
+      ],
+      "actual": [
+        "CLR-001",
+        "CLR-003",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001",
+        "VER-002",
+        "VER-003"
+      ],
+      "latency_ms": 1.87
+    },
+    {
+      "document": "examples/benchmark/kubernetes__intermediate.md",
+      "expected": [
+        "ESC-001",
+        "REC-001"
+      ],
+      "actual": [
+        "ESC-001",
+        "REC-001",
+        "REC-003"
+      ],
+      "latency_ms": 1.609
+    },
+    {
+      "document": "examples/benchmark/kubernetes__improved.md",
+      "expected": [],
+      "actual": [],
+      "latency_ms": 1.771
+    },
+    {
+      "document": "examples/benchmark/kubernetes__sequencing_defect.md",
+      "expected": [
+        "SEQ-001"
+      ],
+      "actual": [
+        "SAFE-001",
+        "SAFE-002",
+        "SEQ-001"
+      ],
+      "latency_ms": 1.818
+    },
+    {
+      "document": "examples/benchmark/kubernetes__edge_case.md",
+      "expected": [
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005"
+      ],
+      "actual": [
+        "CLR-002",
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005",
+        "ESC-001",
+        "REC-001",
+        "REC-003",
+        "SAFE-001",
+        "SAFE-002",
+        "SAFE-004",
+        "SAFE-005",
+        "VER-001",
+        "VER-004"
+      ],
+      "latency_ms": 2.249
+    },
+    {
+      "document": "examples/benchmark/incident_response__weak.md",
+      "expected": [
+        "CLR-001",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001"
+      ],
+      "actual": [
+        "CLR-001",
+        "CLR-003",
+        "COMP-002",
+        "COMP-003",
+        "ESC-001",
+        "OWN-001",
+        "VER-002",
+        "VER-003"
+      ],
+      "latency_ms": 1.543
+    },
+    {
+      "document": "examples/benchmark/incident_response__intermediate.md",
+      "expected": [
+        "ESC-001",
+        "REC-001"
+      ],
+      "actual": [
+        "ESC-001",
+        "REC-001",
+        "REC-003"
+      ],
+      "latency_ms": 1.471
+    },
+    {
+      "document": "examples/benchmark/incident_response__improved.md",
+      "expected": [],
+      "actual": [],
+      "latency_ms": 1.866
+    },
+    {
+      "document": "examples/benchmark/incident_response__sequencing_defect.md",
+      "expected": [
+        "SEQ-001"
+      ],
+      "actual": [
+        "SAFE-001",
+        "SAFE-002",
+        "SEQ-001"
+      ],
+      "latency_ms": 1.902
+    },
+    {
+      "document": "examples/benchmark/incident_response__edge_case.md",
+      "expected": [
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005"
+      ],
+      "actual": [
+        "CLR-002",
+        "CMD-001",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005",
+        "ESC-001",
+        "REC-001",
+        "REC-003",
+        "SAFE-001",
+        "SAFE-002",
+        "SAFE-004",
+        "SAFE-005",
+        "VER-001",
+        "VER-004"
+      ],
+      "latency_ms": 2.273
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Kubernetes",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "K8S-001",
+      "name": "Namespace-sensitive command omits namespace",
+      "category": "command_safety",
+      "description": "Namespace-sensitive command omits namespace.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "k8s_no_namespace",
+      "score_penalty": 8,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "K8S-002",
+      "name": "Cluster-wide mutation",
+      "category": "command_safety",
+      "description": "Cluster-wide mutation.",
+      "rationale": "Domain policy requirement.",
+      "severity": "critical",
+      "enabled": true,
+      "evaluator": "cluster_scope",
+      "score_penalty": 12,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "K8S-003",
+      "name": "Deployment change lacks revision rollback",
+      "category": "recoverability",
+      "description": "Deployment change lacks revision rollback.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "deployment_without_rollback",
+      "score_penalty": 10,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "K8S-004",
+      "name": "Delete target scope unclear",
+      "category": "safety",
+      "description": "Delete target scope unclear.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "k8s_delete_scope",
+      "score_penalty": 9,
+      "remediation": "Add the missing domain-specific control and evidence."
+    }
+  ]
+}

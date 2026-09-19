@@ -1,0 +1,66 @@
+{
+  "name": "Database",
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "DB-001",
+      "name": "Database mutation lacks verified backup",
+      "category": "safety",
+      "description": "Database mutation lacks verified backup.",
+      "rationale": "Domain policy requirement.",
+      "severity": "critical",
+      "enabled": true,
+      "evaluator": "destructive_without_safeguard",
+      "score_penalty": 12,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "DB-002",
+      "name": "Database DELETE lacks WHERE",
+      "category": "command_safety",
+      "description": "Database DELETE lacks WHERE.",
+      "rationale": "Domain policy requirement.",
+      "severity": "critical",
+      "enabled": true,
+      "evaluator": "sql_delete_no_where",
+      "score_penalty": 14,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "DB-003",
+      "name": "Database UPDATE lacks WHERE",
+      "category": "command_safety",
+      "description": "Database UPDATE lacks WHERE.",
+      "rationale": "Domain policy requirement.",
+      "severity": "critical",
+      "enabled": true,
+      "evaluator": "sql_update_no_where",
+      "score_penalty": 14,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "DB-004",
+      "name": "Schema migration lacks recovery",
+      "category": "recoverability",
+      "description": "Schema migration lacks recovery.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "migration_without_recovery",
+      "score_penalty": 10,
+      "remediation": "Add the missing domain-specific control and evidence."
+    },
+    {
+      "id": "DB-005",
+      "name": "Database mutation lacks verification",
+      "category": "verification",
+      "description": "Database mutation lacks verification.",
+      "rationale": "Domain policy requirement.",
+      "severity": "high",
+      "enabled": true,
+      "evaluator": "risk_without_after_verification",
+      "score_penalty": 9,
+      "remediation": "Add the missing domain-specific control and evidence."
+    }
+  ]
+}

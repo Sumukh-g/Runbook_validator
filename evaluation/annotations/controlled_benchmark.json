@@ -1,0 +1,412 @@
+[
+  {
+    "document": "examples/benchmark/database__weak.md",
+    "domain": "database",
+    "variant": "weak",
+    "expected_rule_ids": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "known_defects": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/database__intermediate.md",
+    "domain": "database",
+    "variant": "intermediate",
+    "expected_rule_ids": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "known_defects": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/database__improved.md",
+    "domain": "database",
+    "variant": "improved",
+    "expected_rule_ids": [],
+    "known_defects": [],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/database__sequencing_defect.md",
+    "domain": "database",
+    "variant": "sequencing_defect",
+    "expected_rule_ids": [
+      "SEQ-001"
+    ],
+    "known_defects": [
+      "SEQ-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/database__edge_case.md",
+    "domain": "database",
+    "variant": "edge_case",
+    "expected_rule_ids": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "known_defects": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/linux_service__weak.md",
+    "domain": "linux_service",
+    "variant": "weak",
+    "expected_rule_ids": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "known_defects": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/linux_service__intermediate.md",
+    "domain": "linux_service",
+    "variant": "intermediate",
+    "expected_rule_ids": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "known_defects": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/linux_service__improved.md",
+    "domain": "linux_service",
+    "variant": "improved",
+    "expected_rule_ids": [],
+    "known_defects": [],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/linux_service__sequencing_defect.md",
+    "domain": "linux_service",
+    "variant": "sequencing_defect",
+    "expected_rule_ids": [
+      "SEQ-001"
+    ],
+    "known_defects": [
+      "SEQ-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/linux_service__edge_case.md",
+    "domain": "linux_service",
+    "variant": "edge_case",
+    "expected_rule_ids": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "known_defects": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/application_deployment__weak.md",
+    "domain": "application_deployment",
+    "variant": "weak",
+    "expected_rule_ids": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "known_defects": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/application_deployment__intermediate.md",
+    "domain": "application_deployment",
+    "variant": "intermediate",
+    "expected_rule_ids": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "known_defects": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/application_deployment__improved.md",
+    "domain": "application_deployment",
+    "variant": "improved",
+    "expected_rule_ids": [],
+    "known_defects": [],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/application_deployment__sequencing_defect.md",
+    "domain": "application_deployment",
+    "variant": "sequencing_defect",
+    "expected_rule_ids": [
+      "SEQ-001"
+    ],
+    "known_defects": [
+      "SEQ-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/application_deployment__edge_case.md",
+    "domain": "application_deployment",
+    "variant": "edge_case",
+    "expected_rule_ids": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "known_defects": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/kubernetes__weak.md",
+    "domain": "kubernetes",
+    "variant": "weak",
+    "expected_rule_ids": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "known_defects": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/kubernetes__intermediate.md",
+    "domain": "kubernetes",
+    "variant": "intermediate",
+    "expected_rule_ids": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "known_defects": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/kubernetes__improved.md",
+    "domain": "kubernetes",
+    "variant": "improved",
+    "expected_rule_ids": [],
+    "known_defects": [],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/kubernetes__sequencing_defect.md",
+    "domain": "kubernetes",
+    "variant": "sequencing_defect",
+    "expected_rule_ids": [
+      "SEQ-001"
+    ],
+    "known_defects": [
+      "SEQ-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/kubernetes__edge_case.md",
+    "domain": "kubernetes",
+    "variant": "edge_case",
+    "expected_rule_ids": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "known_defects": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/incident_response__weak.md",
+    "domain": "incident_response",
+    "variant": "weak",
+    "expected_rule_ids": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "known_defects": [
+      "COMP-002",
+      "COMP-003",
+      "OWN-001",
+      "ESC-001",
+      "CLR-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/incident_response__intermediate.md",
+    "domain": "incident_response",
+    "variant": "intermediate",
+    "expected_rule_ids": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "known_defects": [
+      "REC-001",
+      "ESC-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/incident_response__improved.md",
+    "domain": "incident_response",
+    "variant": "improved",
+    "expected_rule_ids": [],
+    "known_defects": [],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/incident_response__sequencing_defect.md",
+    "domain": "incident_response",
+    "variant": "sequencing_defect",
+    "expected_rule_ids": [
+      "SEQ-001"
+    ],
+    "known_defects": [
+      "SEQ-001"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  },
+  {
+    "document": "examples/benchmark/incident_response__edge_case.md",
+    "domain": "incident_response",
+    "variant": "edge_case",
+    "expected_rule_ids": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "known_defects": [
+      "CMD-001",
+      "CMD-003",
+      "CMD-004",
+      "CMD-005"
+    ],
+    "review_status": "project_reviewed",
+    "source": "controlled_project_annotation",
+    "notes": "Internally created deterministic benchmark; not independent expert validation."
+  }
+]
